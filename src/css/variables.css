@@ -1,0 +1,16 @@
+$aurora: #78e08f;
+$paradise: #b8e994;
+$melon: #f8c291;
+$spray: #82ccdd;
+$butter: #ffda79;
+$night: #353b48;
+$bara: hsl(350, 80%, 60%);
+$darner: hsl(200, 70%, 70%);
+$yell: #fdcb6e;
+
+
+$header-accent: $bara;
+$web-accent: $darner;
+$foto-accent: $aurora;
+$prog-accent: $yell;
+$imp-accent: $night;

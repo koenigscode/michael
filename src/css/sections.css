@@ -1,0 +1,48 @@
+.header {
+	background: $header-accent;
+
+
+	&__subtitle-container {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+
+	&__subtitle {
+		color: #fff;
+		text-decoration: none;
+		display: inline;
+		font-size: 1.6rem;
+		font-weight: 500;
+		margin: 20px;
+		text-transform: uppercase;
+		font-family: 'Caveat Brush', cursive;
+		letter-spacing: 2px;
+		
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+	
+}
+
+.brush {
+	width: 40vw;
+}
+
+.web {
+	background: $web-accent;
+}
+
+.foto {
+	background: $foto-accent;
+}
+
+.prog {
+	background: $prog-accent;
+}
+
+.imp {
+	background: $imp-accent;
+}
