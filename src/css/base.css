@@ -1,5 +1,4 @@
 * {
-	margin: 0 auto;
 	padding: 0;
 
 	&::-webkit-scrollbar {
@@ -25,6 +24,11 @@
 	}
 }
 
+* {
+	margin: 0;
+	padding: 0;
+}
+
 html {
 	font-size: 62.5%;
 	box-sizing: border-box;
@@ -38,111 +42,124 @@ body {
 	font-family: 'Raleway', serif;
 }
 
-section {
-	padding: 40px 0;
-}
-
-.flex-center {
+/*.flex-center {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-}
+	}*/
 
-.arrow {
-	border-top: 10px solid #fff;
-	border-left: 30px solid transparent; 
-	border-right: 30px solid transparent; 
-	bottom: 0px;
-	content: "";
-	width: 0; 
-	height: 0;
-	position: absolute;
-	bottom: 0;
-	left: 50%;
-	transform: translate(-50%, 100%);
-	z-index: 10;
+	.arrow {
+		border-top: 10px solid #fff;
+		border-left: 30px solid transparent; 
+		border-right: 30px solid transparent; 
+		bottom: 0px;
+		content: "";
+		width: 0; 
+		height: 0;
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		transform: translate(-50%, 100%);
+		z-index: 10;
 
-	&--header {
-		border-top: 10px solid $header-accent;
+		&--header {
+			border-top: 10px solid $header-accent;
+		}
+
+		&--web {
+			border-top: 10px solid $web-accent;
+		}
+
+		&--foto {
+			border-top: 10px solid $foto-accent;
+		}
+
+		&--prog {
+			border-top: 10px solid $prog-accent;
+		}
 	}
 
-	&--web {
-		border-top: 10px solid $web-accent;
-	}
-
-	&--foto {
-		border-top: 10px solid $foto-accent;
-	}
-
-	&--prog {
-		border-top: 10px solid $prog-accent;
-	}
-}
-
-.title {
-	font-family: 'Caveat Brush', cursive;
-	font-family: 'Patrick Hand', cursive;
-	font-size: 20rem;
-	font-weight: 100;
-	margin: 0 0 16px 0;
-	color: #fff;
-	text-align: center;
-
-	@media only screen and (max-width: 600px) {
-		font-size: 10rem;
-	} 
-
-	&--secondary {
-		font-size: 6.5rem;
+	.title {
+		font-family: 'Caveat Brush', cursive;
+		font-family: 'Patrick Hand', cursive;
+		font-size: 20rem;
 		font-weight: 100;
-	}
-
-}
-
-.info {
-	text-align: justify;
-	-moz-text-align-last: center;
-	text-align-last: center;
-	font-size: 1.8rem;
-	line-height: 140%;
-
-	&-container {
-		max-width: 500px;
-		margin-bottom: 40px;
-	}
-}
-
-.section {
-	min-height: 600px;
-	height: 600px;
-	width: 100%;
-	box-sizing: border-box;
-	padding: 20px;
-	flex-direction: column;
-	color: #fff;
-	position: relative;
-
-	&--small {
-		min-height: 200px;
-	}
-
-	&--full {
-		height: 100vh;
-	}
-}
-
-.icon {
-	font-size: 6rem;
-	margin: 20px;
-
-	&:before {
+		word-wrap: break-word;
 		color: #fff;
+		text-align: center;
+
+		@media only screen and (max-width: 600px) {
+			font-size: 10rem;
+		} 
+
+		&--secondary {
+			font-size: 6.5rem;
+			font-weight: 100;
+
+			@media only screen and (max-width: 600px) {
+				font-size: 5rem;
+			} 
+		}
+
 	}
 
-	&-container {
+	.info {
+		color: #fff;
+		text-align: justify;
+		-moz-text-align-last: center;
+		text-align-last: center;
+		font-size: 1.8rem;
+		line-height: 140%;
+
+		@media only screen and (max-width: 600px) {
+			text-align: center;
+			-moz-text-align-last: auto;
+			text-align-last: auto;
+		}
+
+		&--link:hover {
+			text-decoration: underline;
+		}
+
+		&-container {
+			box-sizing: border-box;
+			width: 100%;
+			max-width: 500px;
+			margin: 20px 0;
+			padding: 0 40px;
+		}
+	}
+
+	.icon {
+		display: inline-block;
+		font-size: 6rem;
+		margin: 20px;
+		width: 50px;
+
+		&:before {
+			color: #fff;
+		}
+
+		&-container {
+			width: 98%;
+			height: 100%;
+			position: relative;
+			margin: 0 auto;
+			text-align: center;
+			display: flex;
+			justify-content: center;
+			/*align-items: center;*/
+			flex-wrap: wrap;
+		}
+	}
+
+	.ie-center-fix {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.flex-center {
 		display: flex;
 		justify-content: center;
-		width: 100%;
-		flex-wrap: wrap;
+		align-items: center;
 	}
-}

@@ -1,0 +1,19 @@
+.impressum {
+	color: #fff;
+	max-width: 1200px;
+	margin: 0 auto;
+
+	&__title {
+		font-size: 3rem;
+		margin: 30px 0;
+	}
+
+	&__info {
+		font-size: 1.6rem;
+		margin-bottom: 10px;
+
+		&--link {
+			color: #3cf;
+		}
+	}
+}

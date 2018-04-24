@@ -1,48 +1,101 @@
-.header {
-	background: $header-accent;
+.section {
+	color: #fff;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 600px;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 40px 0;
+	position: relative;	
 
+	&::after {
+		content: "";
+		background-size: cover;
+		background-attachment: fixed;
+		background-position: center;
+		opacity: 0.3;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		position: absolute;
+		z-index: -5;
+	}
 
-	&__subtitle-container {
-		width: 100%;
+	&__container {
+		max-width: 800px;
 		display: flex;
 		justify-content: center;
-		flex-wrap: wrap;
+		align-items: center;
+		flex-direction: column;
 	}
 
-	&__subtitle {
-		color: #fff;
-		text-decoration: none;
-		display: inline;
-		font-size: 1.6rem;
-		font-weight: 500;
-		margin: 20px;
-		text-transform: uppercase;
-		font-family: 'Caveat Brush', cursive;
-		letter-spacing: 2px;
-		
-		&:hover {
-			text-decoration: underline;
-		}
+	&--small {
+		min-height: 200px;
 	}
-	
+
+	&--full {
+		height: 100vh;
+	}
 }
 
-.brush {
-	width: 40vw;
+.background {
+	z-index: -10;
+	transition: background 0.3s;
+
+	& * {
+		z-index: 0
+	}
+
+	&--web:hover {
+		background: $web-accent;
+	}
+
+}
+
+.header {
+
+	&::after {
+		background-image: url("../img/header.jpg");
+		background-position: 55% 85%;
+	}
+
 }
 
 .web {
 	background: $web-accent;
+
+	&::after {
+		background-image: url("../img/header.jpg");
+		background-position: 55% 85%;
+	}
 }
 
 .foto {
 	background: $foto-accent;
+
+	&::after {
+		background-image: url("../img/header.jpg");
+		background-position: 55% 85%;
+	}
 }
 
 .prog {
 	background: $prog-accent;
+
+	&::after {
+		background-image: url("../img/header.jpg");
+		background-position: 55% 85%;
+	}
 }
 
 .imp {
 	background: $imp-accent;
+
+	&::after {
+		background-image: url("../img/header.jpg");
+		background-position: 55% 85%;
+	}
 }
