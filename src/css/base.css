@@ -39,7 +39,8 @@ body {
 	width: 100%;
 	background: $night;
 	color: #525252;
-	font-family: 'Raleway', serif;
+	font-family: 'Dosis', serif;
+	font-weight: 500;
 }
 
 /*.flex-center {
@@ -49,7 +50,7 @@ body {
 	}*/
 
 	.arrow {
-		border-top: 10px solid #fff;
+		border-top: 10px solid $text;
 		border-left: 30px solid transparent; 
 		border-right: 30px solid transparent; 
 		bottom: 0px;
@@ -85,7 +86,7 @@ body {
 		font-size: 20rem;
 		font-weight: 100;
 		word-wrap: break-word;
-		color: #fff;
+		color: $text;
 		text-align: center;
 
 		@media only screen and (max-width: 600px) {
@@ -104,12 +105,12 @@ body {
 	}
 
 	.info {
-		color: #fff;
+		color: $text;
 		text-align: justify;
 		-moz-text-align-last: center;
 		text-align-last: center;
-		font-size: 1.8rem;
-		line-height: 140%;
+		font-size: 2.1rem;
+		line-height: 130%;
 
 		@media only screen and (max-width: 600px) {
 			text-align: center;
@@ -137,7 +138,7 @@ body {
 		width: 50px;
 
 		&:before {
-			color: #fff;
+			color: $text;
 		}
 
 		&-container {

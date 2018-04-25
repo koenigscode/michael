@@ -17,6 +17,7 @@ session_start();
 
   <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Dosis:300,400,500,700" rel="stylesheet">
 <!--   <link href="https://fonts.googleapis.com/css?family=Caveat+Brush" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Alegreya" rel="stylesheet"> -->

@@ -5,11 +5,12 @@ autoprefixer = require("autoprefixer"),
 cssvars = require("postcss-simple-vars"),
 nested = require("postcss-nested"),
 cssImport = require("postcss-import");
+cssMixins = require("postcss-mixins");
 
 gulp.task("style", function() {
 	return gulp
 	.src("./src/style.css")
-	.pipe(postcss([cssImport, cssvars, nested, autoprefixer]))
+	.pipe(postcss([cssImport, cssMixins, cssvars, nested, autoprefixer]))
 	.pipe(gulp.dest("./public/css"));
 });
 

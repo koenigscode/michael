@@ -1,5 +1,5 @@
 .section {
-	color: #fff;
+	color: $text;
 	box-sizing: border-box;
 	display: flex;
 	justify-content: center;
@@ -8,21 +8,11 @@
 	width: 100%;
 	box-sizing: border-box;
 	padding: 40px 0;
-	position: relative;	
-
-	&::after {
-		content: "";
-		background-size: cover;
-		background-attachment: fixed;
-		background-position: center;
-		opacity: 0.3;
-		top: 0;
-		left: 0;
-		bottom: 0;
-		right: 0;
-		position: absolute;
-		z-index: -5;
-	}
+	position: relative;
+	background-color: $bg;
+	/*background-color: #fff;*/
+	@mixin bg $bg;
+	background-attachment: fixed;
 
 	&__container {
 		max-width: 800px;
@@ -41,61 +31,22 @@
 	}
 }
 
-.background {
-	z-index: -10;
-	transition: background 0.3s;
-
-	& * {
-		z-index: 0
-	}
-
-	&--web:hover {
-		background: $web-accent;
-	}
-
-}
-
 .header {
-
-	&::after {
-		background-image: url("../img/header.jpg");
-		background-position: 55% 85%;
-	}
-
+	background-color: $header-accent;
 }
 
 .web {
-	background: $web-accent;
-
-	&::after {
-		background-image: url("../img/header.jpg");
-		background-position: 55% 85%;
-	}
+	background-color: $web-accent;
 }
 
 .foto {
-	background: $foto-accent;
-
-	&::after {
-		background-image: url("../img/header.jpg");
-		background-position: 55% 85%;
-	}
+	background-color: $foto-accent;
 }
 
 .prog {
-	background: $prog-accent;
-
-	&::after {
-		background-image: url("../img/header.jpg");
-		background-position: 55% 85%;
-	}
+	background-color: $prog-accent;
 }
 
 .imp {
-	background: $imp-accent;
-
-	&::after {
-		background-image: url("../img/header.jpg");
-		background-position: 55% 85%;
-	}
+	background-color: $imp-accent;
 }

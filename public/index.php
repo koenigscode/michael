@@ -11,7 +11,7 @@ require "./includes/head.php";
 					<h1 class="title">Michael.</h1>
 				</div>
 			</div>
-			<div class="arrow arrow--header"></div>
+			<!-- <div class="arrow arrow--header"></div> -->
 		</div>
 	</header>
 
@@ -35,7 +35,7 @@ require "./includes/head.php";
 					<span class="icon icon-gulp"></span>
 				</div>
 			</div>
-			<div class="arrow arrow--web"></div>
+			<!-- <div class="arrow arrow--web"></div> -->
 		</div>
 	</section>
 
@@ -51,7 +51,7 @@ require "./includes/head.php";
 					<span class="icon icon-adobelightroom"></span>
 				</div>
 			</div>
-			<div class="arrow arrow--foto"></div>
+			<!-- <div class="arrow arrow--foto"></div> -->
 		</div>
 	</section>
 
@@ -67,7 +67,7 @@ require "./includes/head.php";
 					<span class="icon icon-java"></span>
 				</div>
 			</div>
-			<div class="arrow arrow--prog"></div>
+			<!-- <div class="arrow arrow--prog"></div> -->
 		</div>
 	</section>
 
