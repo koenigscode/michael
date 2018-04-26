@@ -20,6 +20,11 @@
 		justify-content: center;
 		align-items: center;
 		flex-direction: column;
+
+		&--full {
+			max-width: none;
+			width: 95%;
+		}
 	}
 
 	&--small {
@@ -31,22 +36,27 @@
 	}
 }
 
-.header {
-	background-color: $header-accent;
+.red {
+	background-color: $red-main;
+	@mixin bg $red-dark, 0.1;
 }
 
-.web {
-	background-color: $web-accent;
+.blue {
+	background-color: $blue-main;
+	@mixin bg $blue-dark;
 }
 
-.foto {
-	background-color: $foto-accent;
+.green {
+	background-color: $green-main;
+	@mixin bg $green-dark;
 }
 
-.prog {
-	background-color: $prog-accent;
+.yellow {
+	background-color: $yellow-main;
+	@mixin bg $yellow-dark;
 }
 
-.imp {
-	background-color: $imp-accent;
+.melon {
+	background-color: $melon-main;
+	@mixin bg $melon-dark;
 }

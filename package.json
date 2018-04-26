@@ -9,6 +9,7 @@
   },
   "author": "Michael König",
   "license": "ISC",
+  "repository": "https://github.com/michaelkoenig2002/michael.git",
   "devDependencies": {
     "autoprefixer": "^8.0.0",
     "gulp": "^3.9.1",

@@ -43,124 +43,94 @@ body {
 	font-weight: 500;
 }
 
-/*.flex-center {
+.title {
+	font-family: 'Caveat Brush', cursive;
+	font-family: 'Patrick Hand', cursive;
+	font-size: 20rem;
+	font-weight: 100;
+	word-wrap: break-word;
+	color: $text;
+	text-align: center;
+	margin: 0;
+
+	@media only screen and (max-width: 600px) {
+		font-size: 10rem;
+	} 
+
+	&--secondary {
+		font-size: 6.5rem;
+		font-weight: 100;
+
+		@media only screen and (max-width: 600px) {
+			font-size: 5rem;
+		} 
+	}
+
+}
+
+.info {
+	color: $text;
+	text-align: justify;
+	-moz-text-align-last: center;
+	text-align-last: center;
+	font-size: 2.1rem;
+	line-height: 130%;
+
+	@media only screen and (max-width: 600px) {
+		text-align: center;
+		-moz-text-align-last: auto;
+		text-align-last: auto;
+	}
+
+	&--link:hover {
+		text-decoration: underline;
+	}
+
+	&-container {
+		box-sizing: border-box;
+		width: 100%;
+		max-width: 500px;
+		margin: 20px 0;
+		padding: 0 40px;
+	}
+}
+
+.icon {
+	display: inline-block;
+	font-size: 6rem;
+	margin: 20px;
+	width: 50px;
+
+	&:before {
+		color: $text;
+	}
+
+	&-container {
+		width: 98%;
+		height: 100%;
+		position: relative;
+		margin: 0 auto;
+		text-align: center;
+		display: flex;
+		justify-content: center;
+		/*align-items: center;*/
+		flex-wrap: wrap;
+	}
+
+	&--small {
+		margin: 5px 20px;
+		font-size: 3rem;
+		font-family: "Font Awesome\ 5 Brands" !important;
+	}
+}
+
+.ie-center-fix {
+	display: flex;
+	flex-direction: column;
+}
+
+.flex-center {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	}*/
-
-	.arrow {
-		border-top: 10px solid $text;
-		border-left: 30px solid transparent; 
-		border-right: 30px solid transparent; 
-		bottom: 0px;
-		content: "";
-		width: 0; 
-		height: 0;
-		position: absolute;
-		bottom: 0;
-		left: 50%;
-		transform: translate(-50%, 100%);
-		z-index: 10;
-
-		&--header {
-			border-top: 10px solid $header-accent;
-		}
-
-		&--web {
-			border-top: 10px solid $web-accent;
-		}
-
-		&--foto {
-			border-top: 10px solid $foto-accent;
-		}
-
-		&--prog {
-			border-top: 10px solid $prog-accent;
-		}
-	}
-
-	.title {
-		font-family: 'Caveat Brush', cursive;
-		font-family: 'Patrick Hand', cursive;
-		font-size: 20rem;
-		font-weight: 100;
-		word-wrap: break-word;
-		color: $text;
-		text-align: center;
-
-		@media only screen and (max-width: 600px) {
-			font-size: 10rem;
-		} 
-
-		&--secondary {
-			font-size: 6.5rem;
-			font-weight: 100;
-
-			@media only screen and (max-width: 600px) {
-				font-size: 5rem;
-			} 
-		}
-
-	}
-
-	.info {
-		color: $text;
-		text-align: justify;
-		-moz-text-align-last: center;
-		text-align-last: center;
-		font-size: 2.1rem;
-		line-height: 130%;
-
-		@media only screen and (max-width: 600px) {
-			text-align: center;
-			-moz-text-align-last: auto;
-			text-align-last: auto;
-		}
-
-		&--link:hover {
-			text-decoration: underline;
-		}
-
-		&-container {
-			box-sizing: border-box;
-			width: 100%;
-			max-width: 500px;
-			margin: 20px 0;
-			padding: 0 40px;
-		}
-	}
-
-	.icon {
-		display: inline-block;
-		font-size: 6rem;
-		margin: 20px;
-		width: 50px;
-
-		&:before {
-			color: $text;
-		}
-
-		&-container {
-			width: 98%;
-			height: 100%;
-			position: relative;
-			margin: 0 auto;
-			text-align: center;
-			display: flex;
-			justify-content: center;
-			/*align-items: center;*/
-			flex-wrap: wrap;
-		}
-	}
-
-	.ie-center-fix {
-		display: flex;
-		flex-direction: column;
-	}
-
-	.flex-center {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
+}
